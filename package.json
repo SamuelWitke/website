@@ -1,5 +1,6 @@
 {
   "name": "development",
+  "homepage": "https://samuelwitke.github.io/Personal-WebSite-Development/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
