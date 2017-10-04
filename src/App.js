@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { IndexLink } from 'react-router'
-
 import logo from './logo.svg';
 import './App.css';
 import TicTacToe from './TicTacToe'
@@ -22,7 +20,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div>
-          <li><IndexLink to="/" activeClassName="active"> TicTacToe <TicTacToe /></li>
+          <TicTacToe />
         </div>
       </div>
     );
