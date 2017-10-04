@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "./AStar.css"
 import "./A-star.js"
+import './lib/p5.dom.js'
+import './lib/p5.js'
 
 class AStar extends React.Component {
     render() {
