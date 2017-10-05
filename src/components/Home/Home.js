@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './Home.css';
 
 /* Changes from original tutorial
@@ -13,12 +12,7 @@ import './Home.css';
 class Home extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-		 <div className="home-page">
+      <div className="home-page">
         <h1>The app has React Router</h1>
         <p>
           While the <a href="https://css-tricks.com/learning-react-router/">CSS-Tricks article</a> for
@@ -32,7 +26,6 @@ class Home extends Component {
           As far as the [Search Title] and [Total Results] that you'll see on the results page,
           those are static for now. We will make them dynamic in the third guide.
         </p>
-      </div>
       </div>
     );
   }
