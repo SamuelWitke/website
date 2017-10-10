@@ -21,6 +21,7 @@ class MainLayout extends Component{
 				<li><Link to="/" activeClassName="active">Home</Link></li>
             	<li><Link to="/TicTacToe" activeClassName="active">TicTacToe</Link></li>
 				<li><a href="https://samuelwitke.github.io/p5-Astar/live-A-star-index.html"> A Star </a></li>
+            	<li><Link to="/MonteCarlo" activeClassName="active">Monte Carlo Method</Link></li>
 			</ul>
 		</nav>
         <main>

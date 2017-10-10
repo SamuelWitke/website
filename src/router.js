@@ -10,5 +10,6 @@ export default (
 <Route component={MainLayout}>
        	<Route path="/" component={Home} />
  		<Route path="TicTacToe"component={TicTacToe} />
+ 		<Route path="MonteCarlo"component={MonteCarlo} />
 </Route>
 );
