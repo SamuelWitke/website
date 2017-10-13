@@ -12,20 +12,13 @@ import './Home.css';
 class Home extends Component {
   render() {
     return (
-      <div className="home-page">
-        <h1>The app has React Router</h1>
-        <p>
-          While the <a href="https://css-tricks.com/learning-react-router/">CSS-Tricks article</a> for
-          this guide covers an explanation of <strong>React Router</strong>, there
-          are still many implementation details in this code that the article
-          doesn't cover. For a better understanding of those details, see
-          the <a href="https://github.com/bradwestfall/CSS-Tricks-React-Series">Github documentation</a> for
-          this guide.
-        </p>
-        <p>
-          As far as the [Search Title] and [Total Results] that you'll see on the results page,
-          those are static for now. We will make them dynamic in the third guide.
-        </p>
+       <div className="container text-center">
+            <h1>
+            My name is Samuel Witke, this page is currently in development, but feel free to use the apps available.
+            </h1>
+            <h1>
+            You can find my contact <a href="https://www.linkedin.com/in/samuelwitke"> here </a> 
+            </h1>
       </div>
     );
   }

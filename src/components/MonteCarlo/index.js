@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
-import './TicTacToe.css'
-import {Layer, Rect, Stage, Group} from 'react-konva';
 
-
-Class MonteCarlo extends React.Component {
+class MonteCarlo extends React.Component {
     render() {
-        <div>
+        return(<div>
             <div>
-                  <Rect
-                    x={10}
-                    y={10}
-                    width={50}
-                    height={50}
-                    fill={this.state.color}
-                    shadowBlur={5}
-                    onClick={this.handleClick}
-                    />
+                <h1> To be filled in with cool stuff </h1> 
             </div>
         </div>
+      );
     }
 }
+export default MonteCarlo;
