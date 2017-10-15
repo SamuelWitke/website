@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
 import './Home.css';
-
-/* Changes from original tutorial
- *  - Here we import the tic-tac-toe game from a module
- *    so we import the folder, and use the name
- *    TicTacToe instead of the generic Game
- *    (actually we can use any name we like
- *     such as import Foo from './TicTacToe')
- */
+import './normalize.css'
+import logo from './logo.svg';
 
 class Home extends Component {
+  constructor(){
+    super()
+  }
   render() {
     return (
-       <div className="container text-center">
-            <h1>
-            My name is Samuel Witke, this page is currently in development, but feel free to use the apps available.
-            </h1>
-            <h1>
-            You can find my contact <a href="https://www.linkedin.com/in/samuelwitke"> here </a> 
-            </h1>
-      </div>
+           <div>
+            <div className="content content--intro">
+				<div className="content__inner">
+					<h2 className="content__title">Samuel Witke</h2>
+					<h3 className="content__subtitle">Portfolio</h3>
+					<a href="#" className="enter">Explore</a>
+			    </div>
+                </div>
+            </div>
     );
   }
 }
