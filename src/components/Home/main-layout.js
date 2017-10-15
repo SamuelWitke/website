@@ -16,14 +16,14 @@ class MainLayout extends Component{
 		<nav className="navbar navbar-inverse bg-inverse">
 				<div className="App">	
 		 		<img src={logo} className="App-logo" alt="logo" />
-         			<h2>Welcome to React</h2>
+         			<h3>Welcome to React</h3>
 				</div>
-	  		<ul className="nav navbar-nav">
-				<li className="nav-item py-lg-3"><Link to="/" activeClassName="active">Home</Link></li>
-            	<li className="nav-item py-lg-3"><Link to="/TicTacToe" activeClassName="active">TicTacToe</Link></li>
-            	<li className="nav-item py-lg-3"><Link to="/AStar" activeClassName="active">A* Star Pathfinding</Link></li>
-            	<li className="nav-item py-lg-3"><Link to="/MonteCarlo" activeClassName="active">Monte Carlo Method</Link></li>
-			</ul>
+	  		<nav className="nav navbar-nav">
+				<li className="nav-item py-lg-3"><Link to="/" activeClassName="active"><h3>Home</h3></Link></li>
+            	<li className="nav-item py-lg-3"><Link to="/TicTacToe" activeClassName="active"><h3>TicTacToe</h3></Link></li>
+            	<li className="nav-item py-lg-3"><Link to="/AStar" activeClassName="active"><h3>A* Star Pathfinding</h3></Link></li>
+            	<li className="nav-item py-lg-3"><Link to="/MonteCarlo" activeClassName="active"><h3>Monte Carlo Method</h3></Link></li>
+			</nav>
 		</nav>
         <main>
           {this.props.children}
@@ -33,4 +33,3 @@ class MainLayout extends Component{
   }
 }
 export default MainLayout;
-

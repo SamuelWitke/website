@@ -1,26 +1,11 @@
-.navbar-nav {
-    display:table;
-    width:100%;
-    margin: 0;
-}
-.navbar-nav > li {
-    float:none;
-    display:table-cell;
-    text-align:center;
-}
-li {
-    display:inline-block;
-}
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    /* (80px - line-height of 27px) / 2 = 26.5px */
-    padding-top: 26.5px;
-    padding-bottom: 26.5px;
-    line-height: 27px;
-  }
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 .App {
   text-align: center;
+  color: white;
 }
 
 .App-logo {
@@ -28,11 +13,10 @@ li {
   height: 80px;
 }
 
+ // height: 150px;
 .App-header {
   background-color: #222;
-  height: 150px;
   padding: 20px;
-  color: white;
 }
 
 .App-intro {
