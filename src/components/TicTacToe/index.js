@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import './TicTacToe.css'
 import AI from './AI.js'
 
-
-/*
- * Changes from original tutorial
- *  - Here we import Component, so we can replace
- *    class Square extends React.Component
- *    with
- *    class Square extends Component
- */
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -30,21 +22,21 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+      <div className="container">
+        <div className="row">
+            <div className="col">{this.renderSquare(0)}</div>
+            <div className="col">{this.renderSquare(1)}</div>
+            <div className="col">{this.renderSquare(2)}</div>
         </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
+        <div className="row">
+            <div className="col">{this.renderSquare(3)}</div>
+            <div className="col">{this.renderSquare(4)}</div>
+            <div className="col">{this.renderSquare(5)}</div>
         </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
+        <div className="row">
+            <div className="col">{this.renderSquare(6)}</div>
+            <div className="col">{this.renderSquare(7)}</div>
+            <div className="col">{this.renderSquare(8)}</div>
         </div>
       </div>
     );
@@ -59,7 +51,6 @@ class Game extends React.Component {
       		history: [
  			{
         		squares: Array.from(Array(10).keys())
-        		//squares: Array(9).fill(null)
         	}
       		],
       		stepNumber: 0,
@@ -118,7 +109,7 @@ class Game extends React.Component {
       		const desc = move ? "Move #" + move : "Game start";
       		return (
         		<li key={move}>
-          		<a href="#" onClick={() => this.jumpTo(move)}>{desc}</a>
+          		<a href="/#/TicTacToe" onClick={() => this.jumpTo(move)}>{desc}</a>
         		</li>
       		);
     	});
