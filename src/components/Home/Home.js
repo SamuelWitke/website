@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 import './normalize.css'
+import './img-info.css'
 import logo from './logo.svg';
 
 class Home extends Component {
@@ -17,6 +18,12 @@ class Home extends Component {
 					<a href="#" className="enter">Explore</a>
 			    </div>
                 </div>
+				<div className="img-info">
+					<p className='img-info__title'>
+					 Image taken by Samuel Witke 
+					in Copenhagen,Denmark 
+					</p>
+				</div>
             </div>
     );
   }
