@@ -22,7 +22,7 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container"> 
         <div className="row">
             <div className="col">{this.renderSquare(0)}</div>
             <div className="col">{this.renderSquare(1)}</div>
@@ -122,37 +122,40 @@ class Game extends React.Component {
     	}
 			
     	return (
-		<div>
-			<div className="game">
-			  <div className="game-board">
-				<Board
-				  squares={current.squares}
-				  onClick={i => this.handleClick(i)}
-				/>
-			  </div>
-			  <div className="game-info">
-				<div className="AI">
-					<h2> Turn On AI ? </h2>
-					<br></br>
-			 		<div className="switch-container">
-					 	<label> 
-						  	<input ref="switch" checked={this.state.AIswitch} onChange={ this.handleAIChange } className="switch" type="checkbox" />
-						  <div>
-							  <span><g className="icon icon-toolbar grid-view"></g></span>
-							  <span><g className="icon icon-toolbar ticket-view"></g></span>
-							  <div></div>
-						  </div>
-					  </label>
-				</div>
-		  </div>
-
-				  <div className="game-info-text">
-					  <div>{status}</div>
-					   <ol>{moves}</ol>
-				  </div>
-			  </div>
-			</div>
-			</div>
+                <div className="modal-body row">
+                    <div className="game">
+                        <div className="game-board col-md-6">
+                        <Board
+                            squares={current.squares}
+                            onClick={i => this.handleClick(i)}
+                        />
+                        </div>
+                        <div className=" col-lg-4 col-md-4">
+                            <div className="game-info"> 
+                                <div className="AI">
+                                    <h2> Turn On AI ? </h2>
+                                    <br></br>
+                                    <div className="switch-container">
+					 	                <label>
+						  	            <input ref="switch" checked={this.state.AIswitch} 
+                                        onChange={ this.handleAIChange } className="switch" type="checkbox" />
+						                <div>
+							                <span><g className="icon icon-toolbar grid-view"></g></span>
+							                <span><g className="icon icon-toolbar ticket-view"></g></span>
+							                <div>
+                                            </div>
+						                </div>
+					                    </label>
+                                    </div>
+                                </div>
+                                <div className="game-info-text">
+                                    <div>{status}</div>
+                                    <ol>{moves}</ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 		);
 	}
 }
