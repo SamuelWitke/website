@@ -109,7 +109,7 @@ class Game extends React.Component {
       		const desc = move ? "Move #" + move : "Game start";
       		return (
         		<li key={move}>
-          		<a href="/#/TicTacToe" onClick={() => this.jumpTo(move)}>{desc}</a>
+          		<a href="/website/#/TicTacToe" onClick={() => this.jumpTo(move)}>{desc}</a>
         		</li>
       		);
     	});
