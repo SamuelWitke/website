@@ -122,14 +122,14 @@ class Game extends React.Component {
     	}
 			
     	return (
-                <div className="modal-body row">
-                    <div className="game">
-                        <div className="game-board col-md-6">
+                <div className="container">
+                        <div className="game-board col-lg-6 col-md-4">
                         <Board
                             squares={current.squares}
                             onClick={i => this.handleClick(i)}
                         />
                         </div>
+                        <div className=" col-lg-2 col-md-6"></div>
                         <div className=" col-lg-4 col-md-4">
                             <div className="game-info"> 
                                 <div className="AI">
@@ -154,7 +154,6 @@ class Game extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
 		);
 	}
