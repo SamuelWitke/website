@@ -122,15 +122,15 @@ class Game extends React.Component {
     	}
 			
     	return (
-                <div className="container">
-                        <div className="game-board col-lg-6 col-md-4">
+                <div className="container" style={{paddingTop:'5%'}}>
+                        <div className="game-board col-lg-6 col-md-5">
                         <Board
                             squares={current.squares}
                             onClick={i => this.handleClick(i)}
                         />
                         </div>
-                        <div className=" col-lg-2 col-md-6"></div>
-                        <div className=" col-lg-4 col-md-4">
+                        <div className=" col-lg-1 col-md-3"></div>
+                        <div className=" col-lg-4 col-md-3">
                             <div className="game-info"> 
                                 <div className="AI">
                                     <h2> Turn On AI ? </h2>
